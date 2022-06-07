@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap");
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Kdam Thmor Pro", sans-serif;
+}
+body {
+    
+  background: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(252, 70, 107, 1) 100%
+  );
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock-area {
+  background-color: #4b5d67;
+  border-radius: 50%;
+  width: 500px;
+  height: 500px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 14px solid #112b3c;
+  box-shadow: inset 0px 0px 18px 2px #000000;
+}
+
+.clock-area::after {
+  position: absolute;
+  content: " ";
+  z-index: 100;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.spin-1, .spin-2, .spin-3 {
+    --rotate: 0;
+  justify-content: center;
+  display: flex;
+
+  
+}
+
+.spin-1 {
+  transform: rotate(var(--rotate));
+  z-index: 90;
+}
+
+.spin-2 {
+  transform:rotate(var(--rotate));
+  z-index: 80;
+}
+
+.spin-3 {
+  transform: rotate(var(--rotate));
+  z-index: 70;
+}
+
+.p-seg, .p-min, .p-hour {
+  position: absolute;
+  bottom: 50%;
+ 
+}
+
+.spin-1 .p-seg {
+  width: 6px;
+  height: 180px;
+  background-color: #ff0000;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.spin-2 .p-min {
+  width: 8px;
+  height: 224px;
+  background-color: #fff;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.spin-3 .p-hour {
+  width: 8px;
+  height: 170px;
+  background-color: #fff;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.number {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  font-size: 32px;
+  text-align: center;
+  transform: rotate(0deg);
+  color: #fff;
+  padding: 12px;
+  font-weight: bold;
+}
+
+.clock-number-1 p {
+  transform: rotate(-30deg);
+}
+.clock-number-1 {
+  transform: rotate(30deg);
+}
+.clock-number-2 p {
+  transform: rotate(-60deg);
+}
+.clock-number-2 {
+  transform: rotate(60deg);
+}
+.clock-number-3 p {
+  transform: rotate(-90deg);
+}
+.clock-number-3 {
+  transform: rotate(90deg);
+}
+.clock-number-4 p {
+  transform: rotate(-120deg);
+}
+.clock-number-4 {
+  transform: rotate(120deg);
+}
+.clock-number-5 p {
+  transform: rotate(-150deg);
+}
+.clock-number-5 {
+  transform: rotate(150deg);
+}
+.clock-number-6,
+p {
+  transform: rotate(-180deg);
+}
+
+.clock-number-7 p {
+  transform: rotate(-210deg);
+}
+.clock-number-7 {
+  transform: rotate(210deg);
+}
+.clock-number-8 p {
+  transform: rotate(-240deg);
+}
+.clock-number-8 {
+  transform: rotate(240deg);
+}
+.clock-number-9 p {
+  transform: rotate(-270deg);
+}
+
+.clock-number-9 {
+  transform: rotate(270deg);
+}
+.clock-number-10 p {
+  transform: rotate(-300deg);
+}
+
+.clock-number-10 {
+  transform: rotate(300deg);
+}
+.clock-number-11 p {
+  transform: rotate(-330deg);
+}
+.clock-number-11 {
+  transform: rotate(330deg);
+}
+.clock-number-12 p {
+  transform: rotate(0deg);
+}
+.clock-number-12 {
+  transform: rotate(0deg);
+}
